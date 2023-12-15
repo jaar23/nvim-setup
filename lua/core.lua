@@ -15,7 +15,10 @@ local function set_keymap()
 	map("i", keys.move_up_ins, "<esc><cmd>m .-2<cr>==gi", { desc = "Move up" })
 	map("v", keys.move_down_vis, ":m '>+1<cr>gv=gv", { desc = "Move down" })
 	map("v", keys.move_up_vis, ":m '<-2<cr>gv=gv", { desc = "Move up" })
-	
+	map("n", keys.format, "<cmd>Neoformat<cr>", {desc = "Format file"})
+	map("i", keys.format, "<cmd>Neoformat<cr>", {desc = "Format file"})
+	map("v", keys.format, "<cmd>Neoformat<cr>", {desc = "Format file"})
+
 	--
 	map("n", keys.jump_left_window, "<C-W>h", option)
 	map("n", keys.jump_down_window, "<C-W>j", option)

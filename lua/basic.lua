@@ -67,6 +67,11 @@ vim.opt.wildignore =
 -- nim autocomplete
 vim.g.ale_sign_error = '✘'
 vim.g.ale_sign_warning = '⚠'
+--vim.g.ale_linters_explicit = 1
+--vim.g.ale_lint_on_text_changed = 'never'
+--vim.g.ale_lint_on_enter = 0
+--vim.g.ale_lint_on_save = 1
+--vim.g.ale_fix_on_save = 1
 
 -- Only show cursorline in the current window and in normal mode.
 -- vim.cmd([[
@@ -95,3 +100,4 @@ vim.cmd([[
     \ 'completor': {opt, ctx -> nim#suggest#sug#GetAllCandidates({start, candidates -> asyncomplete#complete(opt['name'], ctx, start, candidates)})}
     \ })
 ]])
+
